@@ -1,0 +1,118 @@
+{
+  "customId": "postonoticia",
+  "queryName": "PostoNoticia",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Posto",
+  "entityFullName": "app.entity.Posto",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Posto",
+        "alias": "p",
+        "namespace": "app.entity.Posto"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": {
+      "blocklyClass": "blockly.Posto",
+      "blocklyMethod": "AposInserir",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u003capp.entity.Posto\u003e",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.Posto",
+        "sourcePath": "src/main/java/blockly/Posto.blockly",
+        "language": "java",
+        "class": "blockly.Posto",
+        "methods": [
+          {
+            "name": "AposInserir",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u003capp.entity.Posto\u003e"
+            ]
+          }
+        ]
+      }
+    },
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "posto": null,
+    "cep": null,
+    "endereco": null,
+    "cidade": null,
+    "uf": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "posto": null,
+    "cep": null,
+    "endereco": null,
+    "cidade": null,
+    "uf": null
+  },
+  "security": {
+    "id": null,
+    "posto": null,
+    "cep": null,
+    "endereco": null,
+    "cidade": null,
+    "uf": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query385826/",
+  "audit": false
+}

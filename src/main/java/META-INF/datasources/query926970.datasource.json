@@ -1,0 +1,96 @@
+{
+  "customId": "marcascarros",
+  "queryName": "MarcasCarros",
+  "sourceType": "blockly",
+  "baseEntity": null,
+  "blockly": {
+    "blocklyClass": "blockly.MarcasCarros",
+    "blocklyMethod": "ObterParallelum",
+    "blocklyLanguage": "java",
+    "blocklyParams": [
+      {
+        "name": "Dados",
+        "value": "data",
+        "type": "CUSTOM"
+      }
+    ],
+    "blocklyJson": {
+      "namespace": "blockly.MarcasCarros",
+      "sourcePath": "src/main/java/blockly/MarcasCarros.blockly",
+      "language": "java",
+      "class": "blockly.MarcasCarros",
+      "methods": [
+        {
+          "name": "ObterParallelum",
+          "hasReturn": "true",
+          "params": [
+            "Dados"
+          ]
+        }
+      ]
+    },
+    "blocklyGETMethod": "ObterParallelum",
+    "blocklyPOSTMethod": "ObterParallelum",
+    "blocklyPUTMethod": "ObterParallelum",
+    "blocklyDELETEMethod": "ObterParallelum",
+    "blocklyFILTERMethod": "ObterParallelum",
+    "blocklyCOUNTMethod": "ObterParallelum"
+  },
+  "entitySimpleName": null,
+  "entityFullName": null,
+  "query": "",
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "codigo": null,
+    "nome": null
+  },
+  "defaultValuesProperties": {
+    "codigo": {
+      "key": false,
+      "nullable": true,
+      "type": "String"
+    },
+    "nome": {
+      "key": false,
+      "nullable": true,
+      "type": "String"
+    }
+  },
+  "security": {
+    "codigo": null,
+    "nome": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query926970/",
+  "audit": false
+}

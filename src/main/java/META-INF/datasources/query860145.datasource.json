@@ -1,0 +1,107 @@
+{
+  "customId": "noticiasseguras",
+  "queryName": "NoticiasSeguras",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Noticias",
+  "entityFullName": "app.entity.Noticias",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Noticias",
+        "alias": "n",
+        "namespace": "app.entity.Noticias"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "n"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": [
+      "Public"
+    ],
+    "POST": true,
+    "POSTAuthorities": [
+      "Administrators"
+    ],
+    "PUT": false,
+    "PUTAuthorities": [
+      "Authenticated"
+    ],
+    "DELETE": false,
+    "DELETEAuthorities": [
+      "Authenticated"
+    ],
+    "FILTER": true,
+    "FILTERAuthorities": [
+      "Public"
+    ],
+    "COUNT": true,
+    "COUNTAuthorities": [
+      "Public"
+    ]
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "titulo": null,
+    "texto": null,
+    "datapubl": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "titulo": null,
+    "texto": null,
+    "datapubl": null
+  },
+  "security": {
+    "id": {},
+    "titulo": {
+      "filter": "Public",
+      "get": "Public"
+    },
+    "texto": {
+      "filter": "Public",
+      "get": "Public"
+    },
+    "datapubl": {
+      "filter": "Public",
+      "get": "Public"
+    }
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "errorHandles": {
+    "primaryKey": "{{NoticiaIdDuplicado}}",
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query860145/",
+  "audit": false
+}
